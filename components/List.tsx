@@ -6,7 +6,7 @@ import SearchBar from './SearchBar';
 import Movie from './Movie';
 
 const List = ({ data }: { data: Array<MovieType> }) => {
-  const [filter, setFilter] = React.useState('Lord of the Rings');
+  const [filter, setFilter] = React.useState('');
 
   const filteredData = useMemo(() => {
     return data.filter((movie) =>
